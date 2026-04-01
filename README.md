@@ -1,38 +1,72 @@
-# 🌟 Awesome AI Tools (AI 工具百宝箱)
+# Awesome AI
 
-欢迎来到我的 AI 工具箱！这里是我个人挖掘、测试并整理的实用 AI 工具合集。
+一个面向长期积累的个人 AI 知识库仓库。
 
-在这个 AI 飞速发展的时代，每天都有无数的新工具诞生。这个仓库的目的是**过滤噪音**，只推荐那些**真正好用、能提高生产力**的 AI 神器。
+这里不只是放链接或工具清单，而是把常用概念、skills、agent 学习笔记、参考资料和最小 demo 代码沉淀成可以持续复习的文档站点。
 
-## 📋 目录 (Categories)
+## 在线文档
 
-* [📝 文本与写作 (Text & Writing)](#-文本与写作)
-* [🎨 图像与设计 (Image & Design)](#-图像与设计)
-* [💻 代码与开发 (Code & Development)](#-代码与开发)
-* [🎧 音频与视频 (Audio & Video)](#-音频与视频)
-* [🛠️ 效率提升 (Productivity)](#-效率提升)
+- GitHub Pages 发布后地址: [https://hwlv.github.io/awesome-ai/](https://hwlv.github.io/awesome-ai/)
 
----
+## 当前结构
 
-## 📝 文本与写作
-*(在这里放提示词、文章生成、总结类工具)*
-* **[ChatGPT](https://chat.openai.com)** - 强大的全能型 AI 助手。
-* **[Kimi](https://kimi.moonshot.cn/)** - 超长上下文阅读神器，适合读长文档。
-* **[工具名称](链接)** - 一句话描述这个工具为什么好用。
+```text
+.
+├─ docs/                 # VitePress 文档站点
+├─ examples/             # 最小示例代码
+├─ .github/workflows/    # GitHub Actions 部署流程
+└─ README.md
+```
 
-## 🎨 图像与设计
-*(在这里放画图、修图类工具)*
-* **[Midjourney](https://www.midjourney.com/)** - 目前出图质量最高的 AI 绘画工具。
-* **[工具名称](链接)** - 一句话描述这个工具为什么好用。
+## 文档栏目
 
-## 💻 代码与开发
-*(在这里放写代码的辅助工具)*
-* **[GitHub Copilot](https://github.com/features/copilot)** - 程序员的 AI 结对编程助手。
-* **[Cursor](https://cursor.sh/)** - 深度集成 AI 的代码编辑器。
+- `guide`: 站点说明、阅读顺序、路线图
+- `fundamentals`: AI 基本概念、prompt、RAG、tool calling
+- `skills`: 常用 skill 与提示词模板
+- `agents`: agent 基础与常见模式
+- `references`: 精选参考资料
+- `reviews`: 每周复盘
+- `templates`: 可直接复用的知识模板
 
----
+## 本地使用
 
-### 💡 关于更新
-我会不定期将我发现的、好用的 AI 工具推送到这里。如果你也有好用的工具推荐，欢迎提交 Issue 或 Pull Request！
+安装依赖：
 
-> 如果觉得这些工具对你有帮助，欢迎右上角点个 **Star ⭐️** 收藏！
+```bash
+npm install
+```
+
+启动文档站点：
+
+```bash
+npm run docs:dev
+```
+
+构建文档：
+
+```bash
+npm run docs:build
+```
+
+运行最小示例：
+
+```bash
+npm run example:prompt
+npm run example:tools
+npm run example:rag
+npm run example:agent
+```
+
+## GitHub Pages 自动部署
+
+仓库已经配置了 GitHub Actions 工作流。要让站点正常发布，请在 GitHub 仓库设置里确认：
+
+1. 打开 `Settings -> Pages`
+2. `Source` 选择 `GitHub Actions`
+3. 推送到 `main` 后，工作流会自动构建并发布站点
+
+## 后续建议
+
+- 按主题继续补充文档内容
+- 给每个核心主题补至少一个最小示例
+- 每周更新一次复盘，持续查缺补漏

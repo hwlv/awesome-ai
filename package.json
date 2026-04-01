@@ -1,0 +1,22 @@
+{
+  "name": "awesome-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal AI knowledge base built with VitePress.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "example:prompt": "node examples/prompt-basics/prompt-structure.js",
+    "example:tools": "node examples/tool-calling/tool-loop.js",
+    "example:rag": "node examples/rag-lite/retrieve.js",
+    "example:agent": "node examples/simple-agent/agent-loop.js"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
