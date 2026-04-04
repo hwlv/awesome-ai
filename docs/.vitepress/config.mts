@@ -72,7 +72,8 @@ export default defineConfig({
         {
           text: 'References',
           items: [
-            { text: '精选参考资料', link: '/references/curated-resources' }
+            { text: '精选参考资料', link: '/references/curated-resources' },
+            { text: '阅读笔记：陶哲轩谈 AI 科学革命', link: '/references/reading-notes/tao-ai-science-revolution' }
           ]
         }
       ],
