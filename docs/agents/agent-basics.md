@@ -59,3 +59,9 @@ Agent 可以简单理解成：把模型放进一个“观察 -> 决策 -> 行动
 3. 最后再看 multi-agent
 
 不要一上来就追求复杂架构。
+
+## 对应示例
+
+- [示例总览](/examples/)
+- `examples/simple-agent`：最小循环骨架
+- `examples/travel-agent`：带真实工具调用的 Python 单 agent 示例

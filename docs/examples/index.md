@@ -24,6 +24,12 @@
 - 目录：`examples/simple-agent`
 - 作用：演示最小 agent loop 如何管理目标、行动和停止条件
 
+### Travel Agent
+
+- 目录：`examples/travel-agent`
+- 作用：演示一个接入真实模型服务、天气查询和搜索工具的 Python agent 示例
+- 适合对比看：先看 `simple-agent` 理解循环骨架，再看这个示例理解“模型 + 工具 + 观察结果”如何真正串起来
+
 ## 建议的使用方式
 
 1. 先读对应主题文档。

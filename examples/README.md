@@ -8,6 +8,7 @@
 - `tool-calling`: 工具调用循环示例
 - `rag-lite`: 极简检索示例
 - `simple-agent`: 极简 agent loop 示例
+- `travel-agent`: 接入真实天气和搜索工具的 Python agent 示例
 
 ## 运行方式
 
@@ -21,3 +22,13 @@ npm run example:agent
 ```
 
 这些脚本都不依赖外部模型服务，重点是帮助理解结构和流程。
+
+如果要运行 `travel-agent`，请进入对应目录按 Python 方式安装依赖并配置环境变量：
+
+```bash
+cd examples/travel-agent
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python main.py
+```

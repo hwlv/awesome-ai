@@ -23,6 +23,7 @@ export default defineConfig({
     },
     nav: [
       { text: '开始', link: '/guide/start-here' },
+      { text: '学习路径', link: '/learning/' },
       { text: '基础概念', link: '/fundamentals/ai-basics' },
       { text: 'Skills', link: '/skills/common-skills' },
       { text: 'Agents', link: '/agents/agent-basics' },
@@ -39,6 +40,19 @@ export default defineConfig({
           ]
         }
       ],
+      '/learning/': [
+        {
+          text: 'Learning',
+          items: [
+            { text: '学习路径总览', link: '/learning/' },
+            { text: 'Web 开发者转 AI 学习路线', link: '/learning/web-developer-to-ai-roadmap' },
+            { text: '阶段 1：Python 与数学基础', link: '/learning/python-math-basics' },
+            { text: '阶段 2：经典机器学习', link: '/learning/classical-ml' },
+            { text: '阶段 3：深度学习核心', link: '/learning/deep-learning-core' },
+            { text: '阶段 4：AI + Web 产品化', link: '/learning/ai-web-product' }
+          ]
+        }
+      ],
       '/fundamentals/': [
         {
           text: 'Fundamentals',
@@ -46,7 +60,8 @@ export default defineConfig({
             { text: 'AI 基本概念总览', link: '/fundamentals/ai-basics' },
             { text: 'Prompt 基础', link: '/fundamentals/prompting' },
             { text: 'Embeddings 与 RAG', link: '/fundamentals/embeddings-rag' },
-            { text: 'Tool Calling', link: '/fundamentals/tool-calling' }
+            { text: 'Tool Calling', link: '/fundamentals/tool-calling' },
+            { text: '模型 API 调用入门', link: '/fundamentals/model-api-access' }
           ]
         }
       ],
@@ -55,7 +70,8 @@ export default defineConfig({
           text: 'Skills',
           items: [
             { text: '常用 Skill 清单', link: '/skills/common-skills' },
-            { text: '提示词模板', link: '/skills/prompt-templates' }
+            { text: '提示词模板', link: '/skills/prompt-templates' },
+            { text: '自主循环 Prompt', link: '/skills/autonomous-loop-prompt' }
           ]
         }
       ],
@@ -64,7 +80,9 @@ export default defineConfig({
           text: 'Agents',
           items: [
             { text: 'Agent 基础', link: '/agents/agent-basics' },
-            { text: 'Agent 模式与拆解', link: '/agents/agent-patterns' }
+            { text: 'Agent 模式与拆解', link: '/agents/agent-patterns' },
+            { text: 'Agent 优先工程化', link: '/agents/agent-first-engineering' },
+            { text: '利用 Codex 的工程技术笔记', link: '/agents/harness-engineering-notes' }
           ]
         }
       ],
