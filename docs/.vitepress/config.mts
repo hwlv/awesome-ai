@@ -45,6 +45,8 @@ export default defineConfig({
           text: 'Learning',
           items: [
             { text: '学习路径总览', link: '/learning/' },
+            { text: 'LLM 学习路径', link: '/learning/llm学习路径' },
+            { text: 'AI 概念笔记', link: '/learning/ai概念' },
             { text: 'Web 开发者转 AI 学习路线', link: '/learning/web-developer-to-ai-roadmap' },
             { text: '阶段 1：Python 与数学基础', link: '/learning/python-math-basics' },
             { text: '阶段 2：经典机器学习', link: '/learning/classical-ml' },
