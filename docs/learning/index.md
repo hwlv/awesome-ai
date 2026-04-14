@@ -13,8 +13,8 @@
 当前站点已经有比较清晰的分工：
 
 - `foundations`：解释核心概念和技术边界
-- `components`：拆 Prompt、RAG、Tool Calling 这类构建模块
-- `systems`：记录 agent 设计、模式和工程化方法
+- `components`：拆 Prompt、RAG、Tool Calling 这类能力模块
+- `systems`：记录 agent 搭建、模式和工程化方法
 - `practice`：汇总真正可运行的最小示例
 - `resources`：放模板、复盘、资料卡和 playbooks
 
@@ -63,8 +63,8 @@ examples/learning/
 
 ## 怎么和现有栏目配合看
 
-- 看不懂概念时，回到 [核心原理](/foundations/)
-- 要理解 Prompt、RAG、Tool Calling，回到 [构建模块](/components/)
-- 要做 agent、自动化或工程化时，回到 [系统设计](/systems/)
+- 看不懂概念时，回到 [概念基础](/foundations/)
+- 要理解 Prompt、RAG、Tool Calling，回到 [能力模块](/components/)
+- 要做 agent、自动化或工程化时，回到 [系统搭建](/systems/)
 - 要整理模板或复盘方式时，回到 [资料库](/resources/)
 - 要验证理解是否落地，去看 [实战项目](/practice/)

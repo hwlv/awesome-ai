@@ -2,7 +2,7 @@
 
 一个面向长期积累的个人 AI 学习仓库。
 
-这里不只是放链接或工具清单，而是把学习路径、核心原理、构建模块、系统设计、实战代码和资料模板沉淀成可以持续复习的文档站点。
+这里不只是放链接或工具清单，而是把学习路径、概念基础、能力模块、系统搭建、实战代码和资料模板沉淀成可以持续复习的文档站点。
 
 ## 在线文档
 
@@ -16,9 +16,9 @@
 │  ├─ .vitepress/           # 站点配置与主题
 │  ├─ guide/                # 使用说明、知识地图、路线图
 │  ├─ learning/             # 学习路线与阶段实践
-│  ├─ foundations/          # AI 核心原理与概念地图
-│  ├─ components/           # Prompt / RAG / Tool Calling 等模块
-│  ├─ systems/              # Agent、系统设计、工程化
+│  ├─ foundations/          # AI 概念基础与知识地图
+│  ├─ components/           # Prompt / RAG / Tool Calling 等能力模块
+│  ├─ systems/              # Agent、工作流、工程化搭建
 │  ├─ practice/             # 实战总览页
 │  ├─ resources/            # 资料、模板、playbooks、复盘
 │  └─ archive/              # 暂不进入主导航的旧笔记
@@ -37,7 +37,7 @@
 - `guide`: 站点说明、知识地图、阅读顺序
 - `learning`: 面向 Web 开发者的 AI 学习路线与阶段实践
 - `foundations`: AI 基本概念与模型接入基础
-- `components`: Prompt、RAG、Tool Calling 等构建模块
+- `components`: Prompt、RAG、Tool Calling 等能力模块
 - `systems`: Agent 基础、模式与工程化
 - `practice`: 实战项目总览
 - `resources`: 参考资料、playbooks、复盘和模板

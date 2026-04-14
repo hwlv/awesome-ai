@@ -29,9 +29,9 @@ export default defineConfig({
     nav: [
       { text: '开始', link: '/guide/start-here' },
       { text: '学习路径', link: '/learning/' },
-      { text: '核心原理', link: '/foundations/' },
-      { text: '构建模块', link: '/components/' },
-      { text: '系统设计', link: '/systems/' },
+      { text: '概念基础', link: '/foundations/' },
+      { text: '能力模块', link: '/components/' },
+      { text: '系统搭建', link: '/systems/' },
       { text: '实战项目', link: '/practice/' },
       { text: '资料库', link: '/resources/' }
     ],
@@ -42,6 +42,7 @@ export default defineConfig({
           items: [
             { text: '从这里开始', link: '/guide/start-here' },
             { text: '知识地图与目录结构', link: '/guide/knowledge-architecture' },
+            { text: 'AI 知识树（建议版）', link: '/guide/ai-knowledge-tree' },
             { text: '站点路线图', link: '/guide/site-roadmap' }
           ]
         }
@@ -61,7 +62,7 @@ export default defineConfig({
       ],
       '/foundations/': [
         {
-          text: '核心原理',
+          text: '概念基础',
           items: [
             { text: '总览', link: '/foundations/' },
             { text: 'AI 基本概念总览', link: '/foundations/ai-basics' },
@@ -71,7 +72,7 @@ export default defineConfig({
       ],
       '/components/': [
         {
-          text: '构建模块',
+          text: '能力模块',
           items: [
             { text: '总览', link: '/components/' },
             { text: 'Prompt 基础', link: '/components/prompting' },
@@ -82,7 +83,7 @@ export default defineConfig({
       ],
       '/systems/': [
         {
-          text: '系统设计',
+          text: '系统搭建',
           items: [
             { text: '总览', link: '/systems/' },
             { text: 'Agent 基础', link: '/systems/agent-basics' },

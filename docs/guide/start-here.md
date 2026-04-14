@@ -9,8 +9,8 @@
 
 - `learning`：先学什么、阶段目标是什么
 - `foundations`：AI 应用最基础的知识地图
-- `components`：Prompt、RAG、Tool Calling 这些构建模块
-- `systems`：Workflow、Agent、工程化设计
+- `components`：Prompt、RAG、Tool Calling 这些能力模块
+- `systems`：Workflow、Agent、工程化搭建
 - `practice`：可运行示例与阶段项目
 - `resources`：模板、playbooks、资料和复盘
 
@@ -22,6 +22,8 @@
 4. `systems`：再看 Agent、工作流和工程化边界。
 5. `practice`：用可运行代码验证理解是否落地。
 6. `resources`：用模板、资料卡和复盘把学习沉淀下来。
+
+如果你想先看一份更细的词汇归类和目录草案，可以直接跳到 [AI 知识树（建议版）](/guide/ai-knowledge-tree)。
 
 ## 建议的内容粒度
 
@@ -49,7 +51,7 @@
 - 讲“先学什么”放 `docs/learning/`
 - 讲“概念地图”放 `docs/foundations/`
 - 讲“能力模块”放 `docs/components/`
-- 讲“系统设计”放 `docs/systems/`
+- 讲“系统搭建”放 `docs/systems/`
 - 放可运行代码到 `examples/`
 - 放模板、资料、复盘到 `docs/resources/`
 

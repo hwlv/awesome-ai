@@ -12,9 +12,9 @@
 | --- | --- | --- |
 | 开始 | 这个仓库怎么用 | `docs/guide/` |
 | 学习路径 | 先学什么、每阶段产出什么 | `docs/learning/` |
-| 核心原理 | AI 应用到底由什么组成 | `docs/foundations/` |
-| 构建模块 | Prompt、RAG、Tool Calling 这些能力块怎么工作 | `docs/components/` |
-| 系统设计 | 怎么把模块拼成 workflow / agent / 工程系统 | `docs/systems/` |
+| 概念基础 | AI 应用到底由什么组成 | `docs/foundations/` |
+| 能力模块 | Prompt、RAG、Tool Calling 这些能力块怎么工作 | `docs/components/` |
+| 系统搭建 | 怎么把模块拼成 workflow / agent / 工程系统 | `docs/systems/` |
 | 实战项目 | 哪些代码可以直接跑，分别在说明什么 | `docs/practice/` + `examples/` |
 | 资料库 | 模板、资料、复盘、阅读笔记 | `docs/resources/` |
 
@@ -22,7 +22,7 @@
 
 - `skill` 不再和 `agent` 并列。
 - `demo / 示例` 不再和“概念栏目”并列。
-- `agent` 被放回更高一层的“系统设计”，因为它本质上建立在 prompt、tool calling、状态管理之上。
+- `agent` 被放回更高一层的“系统搭建”，因为它本质上建立在 prompt、tool calling、状态管理之上。
 
 ## 仓库目录分层
 
@@ -30,9 +30,9 @@
 docs/
 ├─ guide/                  # 仓库使用方式、知识地图、路线图
 ├─ learning/               # 学习路线与阶段任务
-├─ foundations/            # 核心原理与基础概念
-├─ components/             # Prompt / RAG / Tool Calling 等构建模块
-├─ systems/                # Agent、系统设计、工程化
+├─ foundations/            # 概念基础与知识地图
+├─ components/             # Prompt / RAG / Tool Calling 等能力模块
+├─ systems/                # Agent、工作流、工程化搭建
 ├─ practice/               # 实战总览页
 ├─ resources/              # 资料、模板、playbooks、复盘
 └─ archive/                # 暂不进入主导航的旧笔记

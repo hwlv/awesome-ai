@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Awesome AI
   text: 个人 AI 知识库与实验文档
-  tagline: 按学习路径、核心原理、构建模块、系统设计和实战项目分层组织的 AI 学习仓库。
+  tagline: 按学习路径、概念基础、能力模块、系统搭建和实战项目分层组织的 AI 学习仓库。
   actions:
     - theme: brand
       text: 从这里开始
@@ -15,7 +15,7 @@ hero:
 
 features:
   - title: 按层级组织
-    details: "先分学习路径，再分核心原理、构建模块、系统设计和实战，避免把术语和资产混着放。"
+    details: "先分学习路径，再分概念基础、能力模块、系统搭建和实战，避免把术语和资产混着放。"
   - title: 文档与代码配对
     details: "`docs/` 负责解释和归纳，`examples/` 负责可运行验证，两个目录使用同一套分层语言。"
   - title: 资料闭环
@@ -26,7 +26,7 @@ features:
 
 - 学习路线、阶段任务和交付物
 - AI 基础概念与系统知识地图
-- Prompt、RAG、Tool Calling 等构建模块
+- Prompt、RAG、Tool Calling 等能力模块
 - Agent、工作流和工程化设计
 - 可以快速运行和修改的最小实战代码
 - 可复用模板、复盘机制和参考资料
@@ -42,5 +42,5 @@ features:
 
 - 从 [从这里开始](/guide/start-here) 了解整个知识库的使用方式
 - 从 [学习路径总览](/learning/) 确认学习顺序和阶段目标
-- 从 [核心原理](/foundations/) 搭建自己的知识地图
+- 从 [概念基础](/foundations/) 搭建自己的知识地图
 - 从 [实战项目](/practice/) 找一个最小 demo 跑起来
