@@ -5,6 +5,11 @@ export default defineConfig({
   title: 'Awesome AI',
   description: '个人 AI 知识库、实验记录与最小示例。',
   base: '/awesome-ai/',
+  vite: {
+    server: {
+      port: 8087
+    }
+  },
   cleanUrls: true,
   lastUpdated: true,
   head: [
@@ -24,29 +29,28 @@ export default defineConfig({
     nav: [
       { text: '开始', link: '/guide/start-here' },
       { text: '学习路径', link: '/learning/' },
-      { text: '基础概念', link: '/fundamentals/ai-basics' },
-      { text: 'Skills', link: '/skills/common-skills' },
-      { text: 'Agents', link: '/agents/agent-basics' },
-      { text: '示例', link: '/examples/' },
-      { text: '参考资料', link: '/references/curated-resources' }
+      { text: '核心原理', link: '/foundations/' },
+      { text: '构建模块', link: '/components/' },
+      { text: '系统设计', link: '/systems/' },
+      { text: '实战项目', link: '/practice/' },
+      { text: '资料库', link: '/resources/' }
     ],
     sidebar: {
       '/guide/': [
         {
-          text: 'Guide',
+          text: '开始',
           items: [
             { text: '从这里开始', link: '/guide/start-here' },
+            { text: '知识地图与目录结构', link: '/guide/knowledge-architecture' },
             { text: '站点路线图', link: '/guide/site-roadmap' }
           ]
         }
       ],
       '/learning/': [
         {
-          text: 'Learning',
+          text: '学习路径',
           items: [
             { text: '学习路径总览', link: '/learning/' },
-            { text: 'LLM 学习路径', link: '/learning/llm学习路径' },
-            { text: 'AI 概念笔记', link: '/learning/ai概念' },
             { text: 'Web 开发者转 AI 学习路线', link: '/learning/web-developer-to-ai-roadmap' },
             { text: '阶段 1：Python 与数学基础', link: '/learning/python-math-basics' },
             { text: '阶段 2：经典机器学习', link: '/learning/classical-ml' },
@@ -55,70 +59,71 @@ export default defineConfig({
           ]
         }
       ],
-      '/fundamentals/': [
+      '/foundations/': [
         {
-          text: 'Fundamentals',
+          text: '核心原理',
           items: [
-            { text: 'AI 基本概念总览', link: '/fundamentals/ai-basics' },
-            { text: 'Prompt 基础', link: '/fundamentals/prompting' },
-            { text: 'Embeddings 与 RAG', link: '/fundamentals/embeddings-rag' },
-            { text: 'Tool Calling', link: '/fundamentals/tool-calling' },
-            { text: '模型 API 调用入门', link: '/fundamentals/model-api-access' }
+            { text: '总览', link: '/foundations/' },
+            { text: 'AI 基本概念总览', link: '/foundations/ai-basics' },
+            { text: '模型 API 调用入门', link: '/foundations/model-api-access' }
           ]
         }
       ],
-      '/skills/': [
+      '/components/': [
         {
-          text: 'Skills',
+          text: '构建模块',
           items: [
-            { text: '常用 Skill 清单', link: '/skills/common-skills' },
-            { text: '提示词模板', link: '/skills/prompt-templates' },
-            { text: '自主循环 Prompt', link: '/skills/autonomous-loop-prompt' }
+            { text: '总览', link: '/components/' },
+            { text: 'Prompt 基础', link: '/components/prompting' },
+            { text: 'Embeddings 与 RAG', link: '/components/embeddings-rag' },
+            { text: 'Tool Calling', link: '/components/tool-calling' }
           ]
         }
       ],
-      '/agents/': [
+      '/systems/': [
         {
-          text: 'Agents',
+          text: '系统设计',
           items: [
-            { text: 'Agent 基础', link: '/agents/agent-basics' },
-            { text: 'Agent 模式与拆解', link: '/agents/agent-patterns' },
-            { text: 'Agent 优先工程化', link: '/agents/agent-first-engineering' },
-            { text: '利用 Codex 的工程技术笔记', link: '/agents/harness-engineering-notes' }
+            { text: '总览', link: '/systems/' },
+            { text: 'Agent 基础', link: '/systems/agent-basics' },
+            { text: 'Agent 模式与拆解', link: '/systems/agent-patterns' },
+            { text: 'Agent 优先工程化', link: '/systems/agent-first-engineering' },
+            { text: '利用 Codex 的工程技术笔记', link: '/systems/harness-engineering-notes' }
           ]
         }
       ],
-      '/references/': [
+      '/practice/': [
         {
-          text: 'References',
+          text: '实战项目',
           items: [
-            { text: '精选参考资料', link: '/references/curated-resources' },
-            { text: '阅读笔记：陶哲轩谈 AI 科学革命', link: '/references/reading-notes/tao-ai-science-revolution' }
+            { text: '实战总览', link: '/practice/' }
           ]
         }
       ],
-      '/reviews/': [
+      '/resources/': [
         {
-          text: 'Reviews',
+          text: '资料库',
           items: [
-            { text: '每周复盘模板', link: '/reviews/weekly-review' }
+            { text: '总览', link: '/resources/' },
+            { text: '精选参考资料', link: '/resources/curated-resources' },
+            { text: '常用 Skill 清单', link: '/resources/playbooks/common-skills' },
+            { text: '提示词模板', link: '/resources/playbooks/prompt-templates' },
+            { text: '自主循环 Prompt', link: '/resources/playbooks/autonomous-loop-prompt' },
+            { text: '阅读笔记：陶哲轩谈 AI 科学革命', link: '/resources/reading-notes/tao-ai-science-revolution' },
+            { text: '每周复盘模板', link: '/resources/reviews/weekly-review' },
+            { text: '知识笔记模板', link: '/resources/templates/knowledge-note' },
+            { text: '资料卡片模板', link: '/resources/templates/resource-note' }
           ]
         }
       ],
-      '/templates/': [
+      '/archive/': [
         {
-          text: 'Templates',
+          text: '归档',
           items: [
-            { text: '知识笔记模板', link: '/templates/knowledge-note' },
-            { text: '资料卡片模板', link: '/templates/resource-note' }
-          ]
-        }
-      ],
-      '/examples/': [
-        {
-          text: 'Examples',
-          items: [
-            { text: '示例总览', link: '/examples/' }
+            { text: '归档说明', link: '/archive/' },
+            { text: 'AI 概念笔记', link: '/archive/ai概念' },
+            { text: 'LLM 学习路径（旧版摘录）', link: '/archive/llm学习路径' },
+            { text: '日报（归档）', link: '/archive/日报' }
           ]
         }
       ]

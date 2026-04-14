@@ -2,7 +2,7 @@
 
 这一页只保留结论版。完整笔记见：
 
-- [工程技术：在智能体优先的世界中利用 Codex](/agents/harness-engineering-notes)
+- [工程技术：在智能体优先的世界中利用 Codex](/systems/harness-engineering-notes)
 
 如果只想先抓住最重要的判断，看这页就够了。
 
@@ -82,6 +82,6 @@
 
 ## 延伸阅读
 
-- [工程技术：在智能体优先的世界中利用 Codex](/agents/harness-engineering-notes)
-- [Agent 模式与拆解](/agents/agent-patterns)
-- [自主循环 Prompt](/skills/autonomous-loop-prompt)
+- [工程技术：在智能体优先的世界中利用 Codex](/systems/harness-engineering-notes)
+- [Agent 模式与拆解](/systems/agent-patterns)
+- [自主循环 Prompt](/resources/playbooks/autonomous-loop-prompt)

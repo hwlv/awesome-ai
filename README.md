@@ -1,8 +1,8 @@
 # Awesome AI
 
-一个面向长期积累的个人 AI 知识库仓库。
+一个面向长期积累的个人 AI 学习仓库。
 
-这里不只是放链接或工具清单，而是把常用概念、skills、agent 学习笔记、参考资料和最小 demo 代码沉淀成可以持续复习的文档站点。
+这里不只是放链接或工具清单，而是把学习路径、核心原理、构建模块、系统设计、实战代码和资料模板沉淀成可以持续复习的文档站点。
 
 ## 在线文档
 
@@ -14,15 +14,19 @@
 .
 ├─ docs/                     # VitePress 文档站点
 │  ├─ .vitepress/           # 站点配置与主题
-│  ├─ guide/                # 使用说明与路线图
+│  ├─ guide/                # 使用说明、知识地图、路线图
 │  ├─ learning/             # 学习路线与阶段实践
-│  ├─ fundamentals/         # AI 基础概念
-│  ├─ skills/               # Skill 与提示词模板
-│  ├─ agents/               # Agent 方法与工程化
-│  ├─ references/           # 参考资料
-│  ├─ reviews/              # 复盘模板
-│  └─ templates/            # 通用模板
-├─ examples/                # 最小示例代码
+│  ├─ foundations/          # AI 核心原理与概念地图
+│  ├─ components/           # Prompt / RAG / Tool Calling 等模块
+│  ├─ systems/              # Agent、系统设计、工程化
+│  ├─ practice/             # 实战总览页
+│  ├─ resources/            # 资料、模板、playbooks、复盘
+│  └─ archive/              # 暂不进入主导航的旧笔记
+├─ examples/                # 按层级组织的可运行代码
+│  ├─ foundations/          # 原理级最小示例
+│  ├─ components/           # 模块级最小示例
+│  ├─ systems/              # Agent / system 级示例
+│  └─ learning/             # 各阶段配套项目
 ├─ .github/workflows/       # GitHub Actions 部署流程
 ├─ package.json             # 文档与示例脚本
 └─ README.md
@@ -30,14 +34,13 @@
 
 ## 文档栏目
 
-- `guide`: 站点说明、阅读顺序、路线图
+- `guide`: 站点说明、知识地图、阅读顺序
 - `learning`: 面向 Web 开发者的 AI 学习路线与阶段实践
-- `fundamentals`: AI 基本概念、prompt、RAG、tool calling
-- `skills`: 常用 skill 与提示词模板
-- `agents`: agent 基础与常见模式
-- `references`: 精选参考资料
-- `reviews`: 每周复盘
-- `templates`: 可直接复用的知识模板
+- `foundations`: AI 基本概念与模型接入基础
+- `components`: Prompt、RAG、Tool Calling 等构建模块
+- `systems`: Agent 基础、模式与工程化
+- `practice`: 实战项目总览
+- `resources`: 参考资料、playbooks、复盘和模板
 
 ## 本地使用
 
@@ -71,7 +74,7 @@ npm run example:agent
 额外还有一个 Python 版 agent 示例：
 
 ```bash
-cd examples/travel-agent
+cd examples/systems/travel-agent
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -88,6 +91,6 @@ python main.py
 
 ## 后续建议
 
-- 按主题继续补充文档内容
+- 继续沿着 `foundations -> components -> systems -> practice` 扩内容
 - 给每个核心主题补至少一个最小示例
 - 每周更新一次复盘，持续查缺补漏

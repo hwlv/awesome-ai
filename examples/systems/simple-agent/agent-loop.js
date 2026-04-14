@@ -18,7 +18,7 @@ function decideNextStep(currentState) {
 
 function act(action, currentState) {
   if (action === 'collect_topics') {
-    currentState.notes.push('确定栏目：fundamentals、skills、agents、references。')
+    currentState.notes.push('确定层级：learning、foundations、components、systems、resources。')
     return
   }
 

@@ -48,6 +48,6 @@
 
 ## 阅读笔记
 
-- [陶哲轩论 AI 科学革命：从智力垄断者到智力策展人](/references/reading-notes/tao-ai-science-revolution): 基于一条抖音视频整理，适合作为“AI 生成能力上升后，验证为何会成为科研瓶颈”的讨论入口。
+- [陶哲轩论 AI 科学革命：从智力垄断者到智力策展人](/resources/reading-notes/tao-ai-science-revolution): 基于一条抖音视频整理，适合作为“AI 生成能力上升后，验证为何会成为科研瓶颈”的讨论入口。
 
 > 后面你可以继续新增论文、博客、课程、视频，但建议都先过一遍“是否值得沉淀”的筛选。

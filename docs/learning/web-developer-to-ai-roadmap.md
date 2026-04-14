@@ -131,9 +131,9 @@
 
 建议配合这些栏目使用：
 
-- 用 [每周复盘模板](/reviews/weekly-review) 记录进展
-- 用 [知识笔记模板](/templates/knowledge-note) 沉淀概念
-- 用 [提示词模板](/skills/prompt-templates) 整理阅读和复盘
+- 用 [每周复盘模板](/resources/reviews/weekly-review) 记录进展
+- 用 [知识笔记模板](/resources/templates/knowledge-note) 沉淀概念
+- 用 [提示词模板](/resources/playbooks/prompt-templates) 整理阅读和复盘
 
 ## 推荐资源
 
@@ -205,6 +205,6 @@
 
 如果你现在刚开始，顺序可以很简单：
 
-1. 先读 [AI 基本概念总览](/fundamentals/ai-basics)
+1. 先读 [AI 基本概念总览](/foundations/ai-basics)
 2. 再读 [阶段 1：Python 与数学基础](/learning/python-math-basics)
 3. 然后给自己定一周的最小交付物，不要一口气铺满 3 个月计划

@@ -2,7 +2,7 @@
 
 这个示例来自 `ai-study/agent-study/1`，已经按当前仓库结构重新整理过。
 
-它和 `examples/simple-agent` 的区别是：
+它和 `examples/systems/simple-agent` 的区别是：
 
 - `simple-agent`：不依赖真实模型和外部工具，只演示最小循环结构
 - `travel-agent`：接入真实 LLM、天气查询和搜索工具，演示一个更接近实战的单 agent 工具调用流程
@@ -10,7 +10,7 @@
 ## 目录结构
 
 ```text
-examples/travel-agent/
+examples/systems/travel-agent/
 ├─ main.py
 ├─ openai_compatible_client.py
 ├─ query_weather.py
@@ -24,7 +24,7 @@ examples/travel-agent/
 建议先创建虚拟环境，再安装：
 
 ```bash
-cd examples/travel-agent
+cd examples/systems/travel-agent
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

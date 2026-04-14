@@ -12,19 +12,20 @@
 
 当前站点已经有比较清晰的分工：
 
-- `fundamentals`：解释核心概念和技术边界
-- `skills`：沉淀高复用提示词、工作流和执行模板
-- `agents`：记录 agent 设计、模式和工程化方法
-- `examples`：放真正可运行的最小示例
+- `foundations`：解释核心概念和技术边界
+- `components`：拆 Prompt、RAG、Tool Calling 这类构建模块
+- `systems`：记录 agent 设计、模式和工程化方法
+- `practice`：汇总真正可运行的最小示例
+- `resources`：放模板、复盘、资料卡和 playbooks
 
-而 `ai-study` 里的核心价值，是一条面向 Web 开发者的学习路线和阶段实践计划。它和 `fundamentals` 不是一类内容，硬塞进去会让栏目职责变混。
+而 `ai-study` 里的核心价值，是一条面向 Web 开发者的学习路线和阶段实践计划。它和 `foundations` 不是一类内容，硬塞进去会让栏目职责变混。
 
 ## 当前仓库里的推荐落位
 
 - `docs/learning/`：路线图、阶段目标、任务清单、验收标准
 - `examples/learning/`：每个阶段的配套可运行代码
-- `docs/reviews/`：每周复盘、阶段复盘
-- `docs/templates/`：知识卡片、项目总结、PRD 模板
+- `docs/resources/reviews/`：每周复盘、阶段复盘
+- `docs/resources/templates/`：知识卡片、项目总结、PRD 模板
 
 配套代码按阶段组织：
 
@@ -48,7 +49,7 @@ examples/learning/
 
 - 学习说明、任务清单放 `docs/learning`
 - 真的能跑的脚本或项目放 `examples/learning/`
-- 不继续沿用 `ai-doc/1-xxx/README.md + task.md` 这种混放方式
+- 其他模块性知识分别回到 `foundations / components / systems / resources`
 
 ## 推荐阅读顺序
 
@@ -62,7 +63,8 @@ examples/learning/
 
 ## 怎么和现有栏目配合看
 
-- 看不懂概念时，回到 [fundamentals](/fundamentals/ai-basics)
-- 要整理模板或复盘方式时，回到 [skills](/skills/common-skills)
-- 要做 agent、自动化或工程化时，回到 [agents](/agents/agent-basics)
-- 要验证理解是否落地，去看 [examples](/examples/)
+- 看不懂概念时，回到 [核心原理](/foundations/)
+- 要理解 Prompt、RAG、Tool Calling，回到 [构建模块](/components/)
+- 要做 agent、自动化或工程化时，回到 [系统设计](/systems/)
+- 要整理模板或复盘方式时，回到 [资料库](/resources/)
+- 要验证理解是否落地，去看 [实战项目](/practice/)

@@ -2,19 +2,26 @@
 
 这个仓库现在承担两个角色：
 
-- 一个可以持续扩展的 AI 文档站点
-- 一个能承载最小实验代码的学习仓库
+- 一个可持续扩展的 AI 学习文档站点
+- 一个和文档配套的最小实验代码仓库
 
-目标不是一次写全，而是先建立一个稳定的知识框架。以后你补内容时，只需要把新知识放进已有结构，而不是每次重新组织仓库。
+这次重构后，仓库不再按 `skill / agent / demo` 这种混合维度切，而是按更稳定的分层来组织：
+
+- `learning`：先学什么、阶段目标是什么
+- `foundations`：AI 应用最基础的知识地图
+- `components`：Prompt、RAG、Tool Calling 这些构建模块
+- `systems`：Workflow、Agent、工程化设计
+- `practice`：可运行示例与阶段项目
+- `resources`：模板、playbooks、资料和复盘
 
 ## 推荐阅读顺序
 
-1. `fundamentals`：先把概念讲清楚，避免后面学 agent 和 workflow 时只记结论。
-2. `learning`：按阶段规划学习顺序、任务清单和交付物。
-3. `skills`：把常用提示方式、操作套路和可复用模板沉淀下来。
-4. `agents`：理解 agent 的循环、边界和常见架构。
-5. `references`：有方向地补资料，不无目的地囤链接。
-6. `examples`：用最小代码验证你是否真的理解了文档里的内容。
+1. `learning`：先确认学习顺序、阶段目标和交付物。
+2. `foundations`：建立足够稳的知识地图，避免只背术语。
+3. `components`：理解常见能力模块各自解决什么问题。
+4. `systems`：再看 Agent、工作流和工程化边界。
+5. `practice`：用可运行代码验证理解是否落地。
+6. `resources`：用模板、资料卡和复盘把学习沉淀下来。
 
 ## 建议的内容粒度
 
@@ -37,15 +44,18 @@
 
 如果一个主题需要代码，优先在 `examples/` 新建一个最小目录，然后在文档里链接过去。这样文档不会被大量代码淹没。
 
-学习路线类内容建议固定这样拆：
+推荐固定按这套规则落位：
 
-- `docs/learning/` 放路线图和任务清单
-- `examples/learning/` 放阶段 demo
-- `docs/reviews/` 放每周或阶段复盘
+- 讲“先学什么”放 `docs/learning/`
+- 讲“概念地图”放 `docs/foundations/`
+- 讲“能力模块”放 `docs/components/`
+- 讲“系统设计”放 `docs/systems/`
+- 放可运行代码到 `examples/`
+- 放模板、资料、复盘到 `docs/resources/`
 
 ### 3. 固定做复盘
 
-建议每周固定更新一次 [每周复盘模板](/reviews/weekly-review)，重点记录：
+建议每周固定更新一次 [每周复盘模板](/resources/reviews/weekly-review)，重点记录：
 
 - 本周新增了什么理解
 - 哪些概念还是模糊的
@@ -58,4 +68,4 @@
 - 增加 `case-studies/` 沉淀具体项目案例
 - 增加 `evals/` 记录 prompt 或 agent 的评估方法
 
-> 如果你以后内容越来越多，优先扩一级目录，不要把所有知识都继续堆在 `fundamentals` 下面。
+> 如果内容继续扩张，优先沿着现有层级扩子目录，不要再把不同维度的东西重新堆回顶层。

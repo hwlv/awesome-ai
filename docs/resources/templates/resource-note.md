@@ -35,10 +35,11 @@
 
 ## 推荐归档位置
 
-- fundamentals
-- skills
-- agents
-- references
+- learning
+- foundations
+- components
+- systems
+- resources
 
 ## 是否值得二刷
 

@@ -73,5 +73,5 @@ curl -X POST "https://open.bigmodel.cn/api/paas/v4/chat/completions" \
 
 ## 和站点其他内容的关系
 
-- 如果你在做工具调用或工作流编排，可以继续看 [Tool Calling](/fundamentals/tool-calling)
+- 如果你在做工具调用或工作流编排，可以继续看 [Tool Calling](/components/tool-calling)
 - 如果你在做产品化接入，可以继续看 [阶段 4：AI + Web 产品化](/learning/ai-web-product)
