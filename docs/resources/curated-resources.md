@@ -18,6 +18,8 @@
 
 优先找解释任务分解、状态管理、工具调用和停止条件的资料。只讲“很聪明”的内容，通常不够工程化。
 
+- [Hello-Agents: 从零开始构建智能体](https://github.com/datawhalechina/hello-agents): Datawhale 出品的系统性智能体学习教程。从基础理论到实际应用，涵盖智能体定义、经典范式（ReAct/Reflection）、主流框架（LangGraph/AutoGen）以及自研框架搭建。非常适合想要穿透框架表象，理解 AI Native Agent 核心逻辑的开发者。
+
 ### 学习路线
 
 优先找能把阶段目标、交付物和练习顺序说清楚的资料，而不是把课程、框架和工具全堆在一起。

@@ -1,32 +1,22 @@
-import os
 import re
 import sys
-
+from typing import Optional, Union, Tuple, Dict
+from dotenv import load_dotenv
 from openai_compatible_client import OpenAICompatibleClient
 from query_weather import get_weather
 from search_attraction import get_attraction
 from system_prompt import AGENT_SYSTEM_PROMPT
 
+# 加载环境变量
+load_dotenv()
 
 DEFAULT_USER_PROMPT = "你好，请帮我查询一下今天北京的天气，然后根据天气推荐一个合适的旅游景点。"
 MAX_STEPS = 5
 
 
 def build_llm_client() -> OpenAICompatibleClient:
-    api_key = os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY")
-    base_url = os.environ.get("LLM_BASE_URL") or os.environ.get("OPENAI_BASE_URL")
-    model_id = os.environ.get("LLM_MODEL", "deepseek-chat")
-
-    if not api_key:
-        raise RuntimeError(
-            "缺少 LLM_API_KEY 或 OPENAI_API_KEY 环境变量，无法调用模型。"
-        )
-
-    return OpenAICompatibleClient(
-        model=model_id,
-        api_key=api_key,
-        base_url=base_url,
-    )
+    """初始化 LLM 客户端，参数由开发环境 .env 自动注入"""
+    return OpenAICompatibleClient()
 
 
 def get_user_prompt() -> str:
@@ -46,7 +36,7 @@ def extract_action_block(llm_output: str) -> str:
     return llm_output.strip()
 
 
-def parse_action(action_text: str) -> tuple[str, dict[str, str]] | tuple[None, None]:
+def parse_action(action_text: str) -> Union[Tuple[str, Dict[str, str]], Tuple[None, None]]:
     tool_match = re.search(r"(\w+)\((.*)\)", action_text)
     if not tool_match:
         return None, None

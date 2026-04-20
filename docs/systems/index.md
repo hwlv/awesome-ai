@@ -16,6 +16,10 @@
 3. [Agent 优先工程化](/systems/agent-first-engineering)
 4. [利用 Codex 的工程技术笔记](/systems/harness-engineering-notes)
 
+## 推荐外部教程
+ 
+- [Hello-Agents: 从零开始构建智能体](https://github.com/datawhalechina/hello-agents): 系统的、重理论与实战的 Agent 构建指南。
+
 ## 这里为什么不再单独放 `skills`
 
 因为 `skill` 更像可复用操作资产，而不是系统层本体。它现在被收进 [资料库](/resources/) 的 `playbooks`，用于支持执行，而不是定义知识主线。
