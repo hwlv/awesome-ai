@@ -97,3 +97,62 @@ class OpenAICompatibleClient:
         except Exception as exc:
             print(f"❌ 调用 LLM API 时发生错误: {exc}")
             return "错误:调用语言模型服务时出错。"
+
+
+# =============================================
+# 直接运行本文件进行测试
+# =============================================
+if __name__ == "__main__":
+    print("=" * 60)
+    print("🧪 OpenAICompatibleClient 测试")
+    print("=" * 60)
+
+    # ---- 测试 1: 基础对话 ----
+    print("\n📌 测试 1: 基础对话（使用 .env 配置）")
+    print("-" * 40)
+    try:
+        client = OpenAICompatibleClient()
+        print(f"  ✅ 客户端创建成功，模型: {client.model}")
+
+        result = client.generate(
+            prompt="请用一句话介绍你自己。",
+            system_prompt="你是一个友好的 AI 助手。"
+        )
+        print(f"  📝 模型回复: {result}")
+    except Exception as e:
+        print(f"  ❌ 测试 1 失败: {e}")
+
+    # ---- 测试 2: 自定义 system_prompt（角色扮演） ----
+    print("\n📌 测试 2: 自定义 System Prompt（角色扮演）")
+    print("-" * 40)
+    try:
+        client = OpenAICompatibleClient()
+        result = client.generate(
+            prompt="Python 怎么读取 JSON 文件？",
+            system_prompt="你是一位资深 Python 开发者，回答简洁，直接给出代码示例，不超过 5 行。"
+        )
+        print(f"  📝 模型回复:\n{result}")
+    except Exception as e:
+        print(f"  ❌ 测试 2 失败: {e}")
+
+    # ---- 测试 3: 构造参数覆盖（故意传错 key 验证错误处理） ----
+    print("\n📌 测试 3: 错误处理（使用无效 API Key）")
+    print("-" * 40)
+    try:
+        bad_client = OpenAICompatibleClient(
+            model="deepseek-chat",
+            api_key="sk-invalid-key-for-testing",
+            base_url="https://api.deepseek.com",
+        )
+        result = bad_client.generate(
+            prompt="你好",
+            system_prompt="你是助手"
+        )
+        print(f"  📝 返回结果: {result}")
+        # 预期：不会崩溃，而是返回错误提示字符串
+    except Exception as e:
+        print(f"  ❌ 测试 3 异常: {e}")
+
+    print("\n" + "=" * 60)
+    print("🏁 所有测试完成！")
+    print("=" * 60)
